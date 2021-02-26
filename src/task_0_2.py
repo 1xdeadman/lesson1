@@ -3,8 +3,7 @@
 Перед каждым <YOUR CODE> вы можете прочитать описание задания, помеченный фразой <TODO>.
 для проверки введите из папки с проектом: pytest tests/test_task_0_2.py
 """
-import os
 
 text = "For the Alliance!"
 # TODO: выведите значение переменной text в консоль
-print(text)
+"<YOUR CODE>"("<YOUR CODE>")

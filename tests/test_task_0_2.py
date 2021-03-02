@@ -10,7 +10,7 @@ def test_print():
     if os.name in ['Linux', "posix"]:
         task = subprocess.run("python3 src/task_0_2.py", capture_output=True, shell=True)
     else:
-        task = subprocess.run("python src/task_0_2.py", capture_output=True, shell=True)
+        task = subprocess.run("python src/task_0_2.py", capture_output=True,)
     if task.returncode != 0:
         raise Exception("Ваша программа крашится при запуске!")
         text = task.stderr.decode('utf-8')

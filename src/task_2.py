@@ -47,7 +47,6 @@ def checker(value: int):
     result = "неправильно!!"
 
     "<YOUR CODE>"
-    git pull
     result = True if result is not False else False
     return result
 

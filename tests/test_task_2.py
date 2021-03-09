@@ -16,7 +16,7 @@ def test_simple_branch():
 
 
 @pytest.mark.task_2
-def test_simple_branch():
+def test_middle_branch():
 
     for i in range(10):
         first_value = rnd.randint(0, 100)

@@ -10,9 +10,9 @@ def simple_branch(left_value, right_value):
     TODO: если left_value больше right_value, присвойте переменной result значение "верно", в ином случае - "неверно"
     """
     if "<YOUR CODE>":
-        result = "верно"
+        result = "<YOUR CODE>"
     else:
-        result = "неверно"
+        result = "<YOUR CODE>"
 
     return result
 

@@ -8,7 +8,7 @@ TASK_WORD = '<YOUR CODE>'
 @pytest.mark.task_2
 def test_simple_branch():
 
-    for i in range(10):
+    for i in range(100):
         first_value = rnd.randint(0, 100)
         second_value = rnd.randint(0, 100)
         res = task_2.simple_branch(first_value, second_value)
@@ -16,7 +16,7 @@ def test_simple_branch():
 
 
 @pytest.mark.task_2
-def test_simple_branch():
+def test_middle_branch():
 
     for i in range(10):
         first_value = rnd.randint(0, 100)

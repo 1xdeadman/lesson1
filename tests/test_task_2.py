@@ -58,12 +58,37 @@ def test_checker():
 
 @pytest.mark.task_2
 def test_hard_condition():
-
-    first_value = rnd.randint(0, 100)
-    second_value = rnd.randint(0, 100)
+    first_value = 0
+    second_value = 100
     res = task_2.hard_condition(first_value, second_value)
-    if (first_value >= 0 and first_value <= 10) and \
-        (second_value >= -10 and second_value <= 100):
-        assert res is True
-    else:
-        assert res is False
+    assert res is True
+
+    first_value = 10
+    second_value = -10
+    res = task_2.hard_condition(first_value, second_value)
+    assert res is True
+
+    first_value = -10
+    second_value = -10
+    res = task_2.hard_condition(first_value, second_value)
+    assert res is False
+
+    first_value = 5
+    second_value = -100
+    res = task_2.hard_condition(first_value, second_value)
+    assert res is False
+
+    first_value = 0
+    second_value = 0
+    res = task_2.hard_condition(first_value, second_value)
+    assert res is True
+
+    for i in range(100):
+        first_value = rnd.randint(50, 50)
+        second_value = rnd.randint(150, 150)
+        res = task_2.hard_condition(first_value, second_value)
+        if (0 <= first_value <= 10) and \
+            (-10 <= second_value <= 100):
+            assert res is True
+        else:
+            assert res is False
